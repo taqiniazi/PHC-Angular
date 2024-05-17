@@ -1,7 +1,7 @@
 <div class="d-flex justify-content-between">
 
 <div class="ms-auto">
-    <button mat-button [matMenuTriggerFor]="notification" class="text-light fs-5">
+    <button mat-button [matMenuTriggerFor]="notification" class="text-light fs-5 d-none d-md-inline-block">
         <i class="bi bi-envelope-fill"></i>
     </button>
     <mat-menu #notification="matMenu">
@@ -9,7 +9,7 @@
              Item 1</button>
         <button mat-menu-item>Item 2</button>
     </mat-menu>
-    <button mat-button [matMenuTriggerFor]="notification" class="text-light fs-5">
+    <button mat-button [matMenuTriggerFor]="notification" class="text-light fs-5  d-none d-md-inline-block">
         <i class="bi bi-bell-fill"></i>
     </button>
     <mat-menu #notification="matMenu">

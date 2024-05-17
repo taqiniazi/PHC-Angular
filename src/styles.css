@@ -9,3 +9,15 @@ a{text-decoration: none !important;}
 .content-collapse {
     margin-left: 0;
 }
+.content {
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .content-collapse {
+    margin-left: 0;
+  }
+  
+  @media (max-width: 768px) {
+    
+  }

@@ -12,3 +12,11 @@ h5.card-header-text {
 .mat-mdc-text-field-wrapper{
     background-color: transparent !important;
 }
+table tr td:first-child{
+    max-width:350px; width: 40%;
+}
+@media screen and (max-width:768px) {
+    table tr td:first-child{
+        width: 50%;
+    }
+}

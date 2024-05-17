@@ -13,7 +13,7 @@
                 <div class="card-body">
                     <table mat-table [dataSource]="dataSource" class="table table-striped">
                         <ng-container matColumnDef="label">
-                            <td width="350" mat-cell *matCellDef="let element"> {{element.label}} </td>
+                            <td mat-cell *matCellDef="let element"> {{element.label}} </td>
                         </ng-container>
 
                         <ng-container matColumnDef="value">
