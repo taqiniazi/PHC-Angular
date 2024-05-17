@@ -1,0 +1,14 @@
+.mat-tab-label-active, .mat-tab-label-focus {
+    color: #fff!important;
+    background-color: #00a651!important;
+    border-color: #ddd #ddd #0000!important;
+}
+h5.card-header-text {
+    font-size: 16px;
+}
+.mat-mdc-form-field {
+    width: 100%;
+}
+.mat-mdc-text-field-wrapper{
+    background-color: transparent !important;
+}

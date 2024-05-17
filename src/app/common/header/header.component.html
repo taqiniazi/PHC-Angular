@@ -1,0 +1,50 @@
+<div class="d-flex justify-content-between">
+
+<div class="ms-auto">
+    <button mat-button [matMenuTriggerFor]="notification" class="text-light fs-5">
+        <i class="bi bi-envelope-fill"></i>
+    </button>
+    <mat-menu #notification="matMenu">
+        <button mat-menu-item>
+             Item 1</button>
+        <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="notification" class="text-light fs-5">
+        <i class="bi bi-bell-fill"></i>
+    </button>
+    <mat-menu #notification="matMenu">
+        <button mat-menu-item>
+             Item 1</button>
+        <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="userSettings" class="text-light">
+        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d"
+         alt="User image"
+         class="img-fluid rounded-circle"
+         width="30"
+         height="30"
+         
+         /> Taqi Raza
+         <i class="bi bi-chevron-down"></i>
+    </button>
+    <mat-menu #userSettings="matMenu">
+        <button mat-menu-item>
+            <i class="bi bi-person"></i> User Profile
+        </button>
+        <button mat-menu-item>
+            <i class="bi bi-arrow-clockwise"></i> Reset Password
+        </button>
+        <button mat-menu-item>
+            <i class="bi bi-chat-dots"></i> Feedback
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>
+            <i class="bi bi-box-arrow-right"></i> Logout
+        </button>
+
+        
+    </mat-menu>
+    
+</div>
+</div>

@@ -1,0 +1,19 @@
+<div class="matero-branding d-flex align-items-center py-3 px-2">
+	<img src="https://webportal.phc.org.pk/assets/app/images/logo/stack-logo-light.png" alt="logo"
+		class="matero-branding-logo-expanded">
+	<h2 class="matero-branding-name mb-0 ms-2"> HCE Portal</h2>
+</div>
+<mat-nav-list>
+	@for (item of navItems; track $index) {
+		<mat-list-item>
+			<a matListItemTitle   class="d-block" (click)="toggleExpand(item);" href="{{item.url }}">{{ item.label }}</a>
+		</mat-list-item>
+		@if(item.children && item.children.length > 0  && item.expanded) {
+			@for (child of item.children; track $index) {
+			<mat-nav-list class="childrenLink  bg-light">
+				<a matListItemTitle href="{{child.url }}" class="d-block ps-4">{{ child.label }}</a>
+			</mat-nav-list>
+			}
+		}
+	}
+</mat-nav-list>
