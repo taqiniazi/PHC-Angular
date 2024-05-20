@@ -5,3 +5,16 @@
 .matero-branding-name{
    font-size: 24px;
 }
+
+a.mat-mdc-list-item-title.active i{
+   transition: .3s linear;
+   -webkit-transition: .3s linear;
+   -moz-transition: .3s linear;
+   -ms-transition: .3s linear;
+   -o-transition: .3s linear;
+   transform: rotate(180deg);
+   -webkit-transform: rotate(180deg);
+   -moz-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   -o-transform: rotate(180deg);
+}

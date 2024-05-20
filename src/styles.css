@@ -1,23 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("../node_modules/bootstrap-icons/font/bootstrap-icons.css");
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 14px;}
-a{text-decoration: none !important;}
-.content{
-    margin-left: 260px;
+html,
+body {
+  height: 100%;
 }
-.content-collapse {
-    margin-left: 0;
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+a {
+  text-decoration: none !important;
 }
 .content {
-    flex-grow: 1;
-    transition: margin-left 0.3s ease;
-  }
-  
-  .content-collapse {
-    margin-left: 0;
-  }
-  
-  @media (max-width: 768px) {
-    
-  }
+  margin-left: 260px;
+}
+.content-collapse {
+  margin-left: 0;
+}
+.content {
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+}
+.mat-mdc-nav-list .mat-mdc-list-item.active {
+  background: #fff;
+}
+.content-collapse {
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+}

@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [MatListModule],
+  imports: [MatListModule, CommonModule],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
+  activeItem: any = null;
   navItems = [
     { 
       label: 'Home', 
@@ -26,7 +28,13 @@ export class SidebarComponent {
       expanded: false
     }
   ];
+
   toggleExpand(item: any) {
     item.expanded = !item.expanded;
+    this.activeItem = this.activeItem === item ? null : item;
+  }
+
+  isActive(item: any): boolean {
+    return this.activeItem === item;
   }
 }

@@ -17,7 +17,7 @@ import { isPlatformBrowser } from '@angular/common';
     HeaderComponent,
     MatIconModule,
     MatButtonModule,
-    CommonModule  ],
+    CommonModule  ]
 })
 export class AppComponent {
   title = 'phc-new';
